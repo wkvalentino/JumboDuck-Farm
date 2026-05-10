@@ -1,0 +1,61 @@
+/* Tailwind Directives (Wajib jika Anda menggunakan CLI/Build tools) */
+/* @tailwind base; @tailwind components; @tailwind utilities; */
+
+/* 1. Global Reset & Smoothing */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* Memastikan background warna konsisten dengan desain */
+  background-color: #fbf9f8; 
+}
+
+/* 2. Custom Focus Style (Lebih Cantik dari Default) */
+:focus-visible {
+  outline: 2px solid #1b3022;
+  outline-offset: 2px;
+}
+
+/* 3. Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af; /* Gray-400 */
+  opacity: 1;
+}
+
+/* 4. Menghilangkan Arrow pada Input Number (Chrome, Safari, Edge, Opera) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Menghilangkan Arrow pada Input Number (Firefox) */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 5. Custom Scrollbar (Opsional, agar lebih estetik) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3c8c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b3022;
+}

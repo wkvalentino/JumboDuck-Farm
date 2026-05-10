@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JumboDuck Farm - Entok Jumbo Berkualitas</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'farm-green': '#062314',
+            'farm-brown': '#8B5E3C',
+            'farm-gold': '#A68966',
+            'farm-light': '#F8F9F8',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="typography">
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<style data-purpose="custom-styling">
+    .card-shadow {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .hero-overlay {
+      background: linear-gradient(to right, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0) 100%);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold text-farm-green">JumboDuck <span class="text-farm-gold">Farm</span></span>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex space-x-8 text-sm font-medium">
+<a class="text-farm-green border-b-2 border-farm-green pb-1" href="#home">Beranda</a>
+<a class="text-gray-500 hover:text-farm-green transition-colors" href="#tentang-kami">Tentang</a>
+<a class="text-gray-500 hover:text-farm-green transition-colors" href="#products">Produk</a>
+<a class="text-gray-500 hover:text-farm-green transition-colors" href="#gallery">Galeri</a>
+<a class="text-gray-500 hover:text-farm-green transition-colors" href="#testimonials">Testimoni</a>
+</nav>
+<!-- CTA Button -->
+<div class="hidden md:block">
+<a class="bg-farm-green text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-opacity-90 transition-all" href="pesan.html">Pesan Sekarang</a>
+</div>
+<!-- Mobile menu button -->
+<div class="md:hidden">
+<button class="text-gray-500 hover:text-farm-green" type="button">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="pt-20">
+<!-- BEGIN: HeroSection -->
+<section class="relative h-[600px] flex items-center overflow-hidden" id="home">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="entok Background" class="w-full h-full object-cover" src="foto/A wide panoramic shot of a premium Muscovy duck farm during a misty morning.svg"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-6xl font-bold text-farm-green leading-tight">
+            Entok Jumbo<br/>Berkualitas
+          </h1>
+<p class="mt-6 text-lg text-gray-700 leading-relaxed max-w-lg">
+            Pilihan terbaik untuk ternak &amp; konsumsi dengan kualitas unggul. Kami memastikan setiap bibit memiliki genetik terbaik.
+          </p>
+<div class="mt-10 flex flex-wrap gap-4">
+<a class="bg-farm-green text-white px-8 py-4 rounded-md font-semibold hover:bg-opacity-90 transition-all" href="#products">Mulai Sekarang</a>
+<a class="border-2 border-farm-brown text-farm-brown px-8 py-4 rounded-md font-semibold hover:bg-farm-brown hover:text-white transition-all" href="https://wa.me/#" target="_blank">Hubungi Kami</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 bg-white" id="tentang-kami">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div data-purpose="about-text">
+<h2 class="text-3xl font-bold text-farm-green">Tentang Kami</h2>
+<div class="w-20 h-1 bg-farm-brown mt-4 mb-8"></div>
+<p class="text-gray-600 leading-relaxed text-lg">
+              Kami menyediakan entok jumbo berkualitas, sehat, dan siap untuk diternakkan maupun langsung dikonsumsi. Dipelihara dengan perawatan terbaik untuk menghasilkan kualitas unggul. Peternakan kami mengutamakan kebersihan dan pakan organik yang terjaga.
+            </p>
+</div>
+<div data-purpose="about-image">
+<img alt="Tentang Kami" class="rounded-xl shadow-2xl object-cover w-full h-[350px]" src="foto/Detailed close-up shot of a healthy Muscovy duck.svg"/>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: FeaturesSection -->
+<section class="py-24 bg-farm-light">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-farm-green mb-16">Keunggulan Kami</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Feature 1 -->
+<div class="bg-white p-8 rounded-xl card-shadow flex flex-col items-start">
+<div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+<svg class="w-6 h-6 text-farm-green" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-farm-green mb-3">Ukuran besar &amp; sehat</h3>
+<p class="text-sm text-gray-500 leading-relaxed">Genetik pilihan menghasilkan postur tubuh jumbo and daya tahan prima.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white p-8 rounded-xl card-shadow flex flex-col items-start">
+<div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+<svg class="w-6 h-6 text-farm-green" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-farm-green mb-3">Pakan berkualitas</h3>
+<p class="text-sm text-gray-500 leading-relaxed">Nutrisi terjamin dengan formulasi pakan organik dan alami dari alam.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white p-8 rounded-xl card-shadow flex flex-col items-start">
+<div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+<svg class="w-6 h-6 text-farm-green" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-farm-green mb-3">Harga terjangkau</h3>
+<p class="text-sm text-gray-500 leading-relaxed">Kualitas premium dengan penawaran harga yang kompetitif bagi peternak.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-white p-8 rounded-xl card-shadow flex flex-col items-start">
+<div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6">
+<svg class="w-6 h-6 text-farm-green" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-farm-green mb-3">Siap kirim ke nusantara</h3>
+<p class="text-sm text-gray-500 leading-relaxed">Layanan pengiriman aman dan terpercaya ke berbagai wilayah di Indonesia.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturesSection -->
+<!-- BEGIN: PricingSection -->
+<section class="py-24 bg-white" id="products">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-farm-green">Paket Produk</h2>
+<p class="mt-4 text-gray-500">Pilih paket terbaik sesuai kebutuhan Anda</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Package 1: Hemat -->
+<div class="border border-gray-100 rounded-2xl overflow-hidden card-shadow">
+<img alt="Paket Hemat" class="w-full h-48 object-cover" src="foto/Dua ekor entok jumbo berkualitas.svg"/>
+<div class="p-8">
+<h3 class="text-xl font-bold text-farm-green mb-2">Paket Hemat</h3>
+<p class="text-gray-600 text-sm font-medium mb-1">2 Ekor Entok Jumbo</p>
+<p class="text-gray-400 text-sm mb-6">Cocok untuk konsumsi keluarga</p>
+<p class="text-2xl font-bold text-farm-green mb-8">Rp350.000</p>
+<a class="block w-full py-3 bg-farm-green text-white text-center rounded-lg font-semibold hover:bg-opacity-90 transition-all" href="pesan.html">Pesan Sekarang</a>
+</div>
+</div>
+<!-- Package 2: Ternak -->
+<div class="border border-gray-100 rounded-2xl overflow-hidden card-shadow">
+<img alt="Paket Ternak" class="w-full h-48 object-cover" src="foto/Lima ekor entok jumbo sehat untuk ternak.svg"/>
+<div class="p-8">
+<h3 class="text-xl font-bold text-farm-green mb-2">Paket Ternak</h3>
+<p class="text-gray-600 text-sm font-medium mb-1">5 Ekor Entok Jumbo sehat</p>
+<p class="text-gray-400 text-sm mb-6">Cocok untuk usaha ternak</p>
+<p class="text-2xl font-bold text-farm-green mb-8">Rp1.000.000</p>
+<a class="block w-full py-3 bg-farm-green text-white text-center rounded-lg font-semibold hover:bg-opacity-90 transition-all" href="pesan.html">Pesan Sekarang</a>
+</div>
+</div>
+<!-- Package 3: Premium -->
+<div class="border border-gray-100 rounded-2xl overflow-hidden card-shadow">
+<img alt="Paket Premium" class="w-full h-48 object-cover" src="foto/A wide panoramic shot of a premium Muscovy duck farm during a misty morning.svg"/>
+<div class="p-8">
+<h3 class="text-xl font-bold text-farm-green mb-2">Paket Premium</h3>
+<p class="text-gray-600 text-sm font-medium mb-1">10 Ekor Entok Jumbo pilihan</p>
+<p class="text-gray-400 text-sm mb-6">Kualitas unggul dan sehat</p>
+<p class="text-2xl font-bold text-farm-green mb-8">Rp1.650.000</p>
+<a class="block w-full py-3 bg-farm-green text-white text-center rounded-lg font-semibold hover:bg-opacity-90 transition-all" href="pesan.html">Pesan Sekarang</a>
+</div>
+</div>
+</div>
+
+</section>
+<!-- END: PricingSection -->
+<!-- BEGIN: GallerySection -->
+<section class="py-24 bg-farm-light" id="gallery">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-farm-green mb-16">Galeri Peternakan</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="foto/Clean modern duck coop.svg"/>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="foto/Healthy Muscovy ducks feeding.svg"/>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="foto/Ducks in a farm pond.svg   "/>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="foto/Organic duck feed close-up.svg"/>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="foto/Ducks in a morning meadow.svg"/>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="foto/Jumbo Muscovy duck portrait.svg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: GallerySection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="py-24 bg-white" id="testimonials">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-farm-green">Apa Kata Mereka</h2>
+<p class="mt-4 text-gray-500">Kepuasan pelanggan adalah prioritas utama kami</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="p-8 bg-white border border-gray-100 rounded-xl card-shadow">
+  <div class="flex text-farm-gold mb-4 text-yellow-500">
+    <span>★★★★★</span>
+  </div>
+  
+  <p class="italic text-gray-600 mb-8 leading-relaxed">
+    "Entoknya sehat dan cepat besar, kualitasnya bagus sekali."
+  </p>
+  
+  <div class="flex items-center">
+    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-green-700">
+        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    
+    <div>
+      <p class="font-bold text-sm text-farm-green text-green-900">Budi Santoso</p>
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Madiun • Mei 2026</p>
+    </div>
+  </div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-8 bg-white border border-gray-100 rounded-xl card-shadow">
+  <div class="flex text-farm-gold mb-4 text-yellow-500">
+    <span>★★★★★</span>
+  </div>
+  <p class="italic text-gray-600 mb-8 leading-relaxed">
+    "Pengiriman aman dan entok sampai dalam kondisi sehat."
+  </p>
+  <div class="flex items-center">
+    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-green-700">
+        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div>
+      <p class="font-bold text-sm text-farm-green text-green-900">Andi Pratama</p>
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Ponorogo • April 2026</p>
+    </div>
+  </div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-8 bg-white border border-gray-100 rounded-xl card-shadow">
+  <div class="flex text-farm-gold mb-4 text-yellow-500">
+    <span>★★★★★</span>
+  </div>
+  <p class="italic text-gray-600 mb-8 leading-relaxed">
+    "Ukuran entok jumbo sesuai harapan dan cocok untuk ternak."
+  </p>
+  <div class="flex items-center">
+    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-green-700">
+        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div>
+      <p class="font-bold text-sm text-farm-green text-green-900">Siti Rahma</p>
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Kediri • Mei 2026</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: CallToAction -->
+<section class="py-24 bg-farm-green text-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-4xl font-bold mb-6">Siap Mulai Beternak?</h2>
+<p class="text-lg opacity-80 mb-10 leading-relaxed">
+          Konsultasikan kebutuhan entok jumbo Anda bersama kami sekarang juga. Tim kami siap membantu Anda memilih paket yang paling sesuai.
+        </p>
+<a class="inline-flex items-center gap-2 bg-farm-brown text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all" href="https://wa.me/#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.139c1.52.907 3.013 1.385 4.62 1.385 5.033 0 9.132-4.098 9.135-9.134.003-5.038-4.097-9.138-9.138-9.138-5.037 0-9.132 4.1-9.135 9.136-.001 2.053.682 4.024 1.954 5.642l-1.018 3.712 3.812-1.003z"></path></svg>
+          Chat WhatsApp
+        </a>
+</div>
+</section>
+<!-- END: CallToAction -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-farm-light py-20 border-t border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12">
+<!-- Brand -->
+<div class="md:col-span-2">
+<h2 class="text-2xl font-bold text-farm-green mb-6">JumboDuck Farm</h2>
+<p class="text-gray-500 max-w-sm leading-relaxed">
+            Kediri, Jawa Timur. Peternakan spesialis entok jumbo berkualitas unggul untuk kemitraan dan konsumsi premium.
+          </p>
+</div>
+<!-- Contact Info -->
+<div>
+<h3 class="text-sm font-bold text-farm-green uppercase tracking-widest mb-6">Info Kontak</h3>
+<ul class="space-y-4 text-sm text-gray-500">
+<li class="flex items-center gap-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              Kediri, Jawa Timur
+            </li>
+<li class="flex items-center gap-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              0857-5579-9077
+            </li>
+</ul>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-sm font-bold text-farm-green uppercase tracking-widest mb-6">Tautan Cepat</h3>
+<ul class="space-y-4 text-sm text-gray-500">
+<li><a class="hover:text-farm-brown transition-colors" href="#">WhatsApp</a></li>
+<li><a class="hover:text-farm-brown transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-farm-brown transition-colors" href="#">Facebook</a></li>
+<li><a class="hover:text-farm-brown transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: CopyrightBar -->
+<div class="bg-farm-green py-6 text-center text-[10px] text-white/50 border-t border-white/10 px-4">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-4">
+<span>© 2026 JumboDuck Farm | All rights reserved.</span>
+<span class="hidden md:inline">|</span>
+<span>⚠️ Website ini dibuat untuk memenuhi tugas mata kuliah Interaksi Manusia dan Komputer dan bukan website komersial resmi.</span>
+</div>
+</div>
+<!-- END: CopyrightBar -->
+</body></html>
