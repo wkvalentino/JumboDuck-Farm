@@ -38,36 +38,51 @@
     }
   </style>
 </head>
+
 <body class="bg-white text-gray-900">
 <!-- BEGIN: MainHeader -->
-<header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<!-- Logo -->
-<div class="flex-shrink-0 flex items-center">
-<span class="text-2xl font-bold text-farm-green">JumboDuck <span class="text-farm-gold">Farm</span></span>
-</div>
-<!-- Navigation Links -->
-<nav class="hidden md:flex space-x-8 text-sm font-medium">
-<a class="text-farm-green border-b-2 border-farm-green pb-1" href="#home">Beranda</a>
-<a class="text-gray-500 hover:text-farm-green transition-colors" href="#tentang-kami">Tentang</a>
-<a class="text-gray-500 hover:text-farm-green transition-colors" href="#products">Produk</a>
-<a class="text-gray-500 hover:text-farm-green transition-colors" href="#gallery">Galeri</a>
-<a class="text-gray-500 hover:text-farm-green transition-colors" href="#testimonials">Testimoni</a>
-</nav>
-<!-- CTA Button -->
-<div class="hidden md:block">
-<a class="bg-farm-green text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-opacity-90 transition-all" href="pesan.html">Pesan Sekarang</a>
-</div>
-<!-- Mobile menu button -->
-<div class="md:hidden">
-<button class="text-gray-500 hover:text-farm-green" type="button">
-<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-</div>
-</div>
+<header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-[100] border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <div class="flex-shrink-0 flex items-center">
+        <span class="text-2xl font-bold text-farm-green">JumboDuck <span class="text-farm-gold">Farm</span></span>
+      </div>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium items-center">
+      <a class="nav-link active-link pb-1" href="#home">Beranda</a>
+      <a class="nav-link text-gray-500 hover:text-farm-green pb-1" href="#tentang-kami">Tentang</a>
+      <a class="nav-link text-gray-500 hover:text-farm-green pb-1" href="#products">Produk</a>
+      <a class="nav-link text-gray-500 hover:text-farm-green pb-1" href="#gallery">Galeri</a>
+      <a class="nav-link text-gray-500 hover:text-farm-green pb-1" href="#testimonials">Testimoni</a>
+      
+      <a class="bg-farm-green text-white px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all" href="pesan.html">Pesan Sekarang</a>
+    </nav>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" type="button" class="relative z-[110] p-2 text-gray-600 hover:text-farm-green focus:outline-none bg-gray-50 rounded-lg">
+          <span class="sr-only">Open Menu</span>
+          <svg id="menu-icon" class="h-6 w-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <svg id="close-icon" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+ <div id="mobile-menu-panel" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-100 shadow-xl z-[90]">
+  <nav class="flex flex-col p-6 space-y-4 shadow-inner">
+    <a class="mobile-nav-link mobile-active pl-4 py-2" href="#home">Beranda</a>
+    <a class="mobile-nav-link pl-4 py-2 text-gray-600" href="#tentang-kami">Tentang Kami</a>
+    <a class="mobile-nav-link pl-4 py-2 text-gray-600" href="#products">Produk Kami</a>
+    <a class="mobile-nav-link pl-4 py-2 text-gray-600" href="#gallery">Galeri</a>
+    <a class="mobile-nav-link pl-4 py-2 text-gray-600" href="#testimonials">Testimoni</a>
+    
+    <a class="bg-farm-green text-white text-center py-4 rounded-xl font-bold shadow-lg" href="pesan.html">Pesan Sekarang</a>
+  </nav>
 </div>
 </header>
 <!-- END: MainHeader -->
@@ -99,8 +114,8 @@
 <section class="py-24 bg-white" id="tentang-kami">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid md:grid-cols-2 gap-16 items-center">
-<div data-purpose="about-text">
-<h2 class="text-3xl font-bold text-farm-green">Tentang Kami</h2>
+<div data-purpose="about-text" >
+<h2 class="text-3xl font-bold text-farm-green" >Tentang Kami</h2>
 <div class="w-20 h-1 bg-farm-brown mt-4 mb-8"></div>
 <p class="text-gray-600 leading-relaxed text-lg">
               Kami menyediakan entok jumbo berkualitas, sehat, dan siap untuk diternakkan maupun langsung dikonsumsi. Dipelihara dengan perawatan terbaik untuk menghasilkan kualitas unggul. Peternakan kami mengutamakan kebersihan dan pakan organik yang terjaga.
@@ -360,4 +375,91 @@
 </div>
 </div>
 <!-- END: CopyrightBar -->
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu-panel');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (btn && menu) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log("Tombol diklik!"); // Cek apakah muncul di log
+        
+        const isHidden = menu.classList.contains('hidden');
+        
+        if (isHidden) {
+          menu.classList.remove('hidden');
+          menuIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+        } else {
+          menu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+      });
+
+      // Menutup menu jika user mengklik link di dalamnya
+      const links = menu.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        });
+      });
+    } else {
+      console.error("Elemen menu atau tombol tidak ditemukan!");
+    }
+  });
+
+  // Mengambil semua elemen link navigasi
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // 1. Hapus class aktif dan garis bawah dari semua menu
+      navLinks.forEach(item => {
+        item.classList.remove('active-link');
+        item.classList.add('text-gray-500');
+      });
+
+      // 2. Tambahkan class aktif ke menu yang baru saja diklik
+      this.classList.add('active-link');
+      this.classList.remove('text-gray-500');
+    });
+  });
+
+  // Fungsi untuk memindahkan sorotan Desktop
+  const desktopLinks = document.querySelectorAll('.nav-link');
+  desktopLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      desktopLinks.forEach(item => item.classList.remove('active-desktop'));
+      this.classList.add('active-desktop');
+    });
+  });
+
+  // Ambil semua elemen link di menu mobile
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // 1. Hapus class aktif dari semua menu mobile
+      mobileLinks.forEach(item => {
+        item.classList.remove('mobile-active');
+        item.classList.add('text-gray-600');
+      });
+
+      // 2. Tambahkan class aktif ke menu yang baru saja diklik
+      this.classList.add('mobile-active');
+      this.classList.remove('text-gray-600');
+
+      // 3. (Opsional) Tutup menu otomatis setelah klik agar user bisa melihat konten
+      const panel = document.getElementById('mobile-menu-panel');
+      if (panel) panel.classList.add('hidden');
+    });
+  });
+
+</script>
 </body></html>
